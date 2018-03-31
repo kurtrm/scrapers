@@ -3,18 +3,17 @@ from setuptools import setup
 
 
 extra_packages = {
-    'testing': ['pytest-cov', 'tox']
+    'testing': ['pytest']
 }
 
 
 setup(
-    name='Transcript Transcriber',
-    description='Passes security credentials to the UF website'
-                'and parses unofficial transcripts to look nicer.',
-    version=0.0,
+    name='scrapers',
+    description='Contains various scrapers for different websites'
+                'and a script that threw objects into MongoDB.',
+    version=0.1,
     author='Kurt Maurer',
     author_email='kurtrm@gmail.com',
-    license='MIT',
-    install_requires=['bs4', 'requests', 'pytest'],
+    install_requires=['bs4', 'selenium'],
     extras_require=extra_packages
 )
